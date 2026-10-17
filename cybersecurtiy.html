@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        <section id="homePage">
+            <header class="game-header">
+                <h1>cybersecurity</h1>
+                <p>Are you ready for the challenge?</p>
+            </header>
+            <button id="startButton">Start Game</button>
+        </section>
+        <section id="questionsPage" class="hidden">
+
+            <header class="game-header">
+                <h1>cybersecurity</h1>
+                <p>Choose the correct answer for each question.</p>
+            </header>
+            <div class="score-board">
+                <p>⭐ Score: <span id="score">0</span></p>
+                <p>🏆 Best Score: <span id="bestScore">0</span></p>
+            </div>
+            <div id="questionList">
+                <!-- Questions will appear here using JavaScript -->
+            </div>
+            <button id="resultButton" class="hidden">
+                Go to Result
+            </button>
+        </section>
+        <section id="resultPage" class="hidden">
+            <header class="game-header">
+                <h1>Mission Complete!</h1>
+                <p>You finished the challenge!</p>
+            </header>
+            <div class="score-board">
+                <p>🎯 Final Score: <span id="finalScore">0</span></p>
+                <p>✅ Correct Answers: <span id="correctCount">0</span></p>
+                <p>❌ Wrong Answers: <span id="wrongCount">0</span></p>
+                <p>🏆 Best Score: <span id="bestFinal">0</span></p>
+            </div>
+            <button id="playAgainButton">Play Again</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
